@@ -13,7 +13,9 @@
   --white: #fff;
   --dairy: #fcfcfc;
 }
-
+html {
+  scroll-padding: 72px;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--slate);
@@ -225,7 +227,7 @@ button {
 .burger-nav {
   margin-bottom: auto;
 }
-.burger-menu-item:first-child a {
+.burger-menu-item a:hover {
   color: var(--ocean);
 }
 .burger-menu-item:not(:last-child) {
