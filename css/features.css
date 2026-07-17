@@ -1,0 +1,61 @@
+/* ==========================================================================================================================================
+BENEFITS STYLES
+========================================================================================================================================== */
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
+}
+.background-svg {
+  display: none;
+}
+.benefits-subtitle {
+  margin-bottom: 8px;
+}
+.benefits-text {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/*  BENEFITS STYLES  */
+/* ===== @media FOR TABLET ===== */
+@media (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  .benefits-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .benefits-subtitle {
+    text-align: left;
+  }
+}
+
+/*  BENEFITS STYLES  */
+/* ===== @media FOR DESCTOP ===== */
+@media (min-width: 1158px) {
+  .benefits-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .background-svg {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+  }
+  .benefits-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .benefits-text {
+    font-weight: 400;
+  }
+}
