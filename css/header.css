@@ -17,6 +17,10 @@ HEADER STYLES
   justify-content: space-between;
   align-items: center;
 }
+.header-section .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .logo-span-header {
   color: var(--navy-blue);
 }
@@ -30,8 +34,6 @@ HEADER STYLES
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 .icon-burger-menu {
   fill: #2f2f37;
@@ -40,10 +42,8 @@ HEADER STYLES
 /*  HEADER STYLES  */
 /* ===== @media FOR TABLET ===== */
 @media (min-width: 768px) {
-  .nav-menu {
-    display: flex;
-    gap: 120px;
-    align-items: center;
+  .burger-menu-btn {
+    display: none;
   }
   .header-nav-links {
     display: flex;
@@ -97,9 +97,6 @@ HEADER STYLES
 /*  HEADER STYLES  */
 /* ===== @media FOR DESCTOP ===== */
 @media (min-width: 1158px) {
-  .nav-menu {
-    gap: 76px;
-  }
   .header-address-links {
     flex-direction: row;
     gap: 40px;

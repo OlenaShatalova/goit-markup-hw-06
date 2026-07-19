@@ -4,11 +4,9 @@ TEAM STYLES
 .team-section {
   background-color: #f4f4fd;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .team-section .container {
-    padding-right: 28px;
-    padding-left: 28px;
-  }
+.team-section .container {
+  padding-right: 28px;
+  padding-left: 28px;
 }
 .team-list {
   display: flex;
@@ -70,5 +68,14 @@ TEAM STYLES
   .team-list {
     flex-direction: row;
     column-gap: 24px;
+  }
+}
+
+/*  TEAM STYLES  */
+/* ===== @media FOR DESCTOP ===== */
+@media (min-width: 1158px) {
+  .team-section .container {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
