@@ -72,7 +72,7 @@ PORTFOLIO STYLES
 /* ===== @media FOR DESKTOP ===== */
 @media screen and (min-width: 1158px) {
   .portfolio-section-list {
-    row-gap: 40px;
+    row-gap: 48px;
   }
   .portfolio-section-item {
     max-width: calc((100% - 2 * 24px) / 3);

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header-section">
+    <header class="header-section" id="header">
       <div class="container">
         <nav class="nav-menu">
           <a class="logo" href="./index.html"
@@ -29,9 +29,7 @@
 
           <ul class="header-nav-links">
             <li class="header-nav-item">
-              <a class="header-nav-link js-header-link" href="#studio"
-                >Studio</a
-              >
+              <a class="header-nav-link js-header-link" href="#hero">Studio</a>
             </li>
 
             <li class="header-nav-item">
@@ -41,7 +39,7 @@
             </li>
 
             <li class="header-nav-item">
-              <a class="header-nav-link js-header-link" href="#contacts"
+              <a class="header-nav-link js-header-link" href="#footer"
                 >Contacts</a
               >
             </li>
@@ -73,7 +71,7 @@
 
     <main>
       <!--Order Service-->
-      <section class="order-section js-anchor" id="studio">
+      <section class="order-section js-anchor" id="hero">
         <div class="container container-order">
           <h1 class="order-section-title">
             Effective Solutions for Your Business
@@ -85,9 +83,9 @@
       </section>
 
       <!--Benefits-->
-      <section class="benefits-section section">
+      <section class="benefits-section section" id="features">
         <div class="container">
-          <h2 class="visually-hidden">Benefits</h2>
+          <h2 class="sr-only">Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-item">
               <div class="background-svg">
@@ -142,7 +140,7 @@
       </section>
 
       <!--Our Team-->
-      <section class="team-section section">
+      <section class="team-section section" id="team">
         <div class="container">
           <h2 class="team-section-title">Our Team</h2>
           <ul class="team-list">
@@ -474,7 +472,7 @@
       </section>
     </main>
 
-    <footer class="footer-section section js-anchor" id="contacts">
+    <footer class="footer-section section js-anchor" id="footer">
       <div class="container">
         <div class="footer-inform">
           <a class="logo" href="./index.html"
@@ -541,7 +539,7 @@
     </footer>
 
     <!-- Overlay Order -->
-    <div class="modal-overlay js-modal-overlay">
+    <div class="modal-overlay js-modal-overlay" id="modal">
       <div class="modal">
         <button class="btn-close js-close-order-btn" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -603,7 +601,7 @@
           </div>
           <div class="checkbox-container">
             <input
-              class="visually-hidden check"
+              class="sr-only check"
               id="user-privacy"
               type="checkbox"
               name="user-privacy"
@@ -627,7 +625,7 @@
     </div>
 
     <!-- Menu burger -->
-    <div class="burger-menu-window js-modal-menu">
+    <div class="burger-menu-window js-modal-menu" id="mobile-menu">
       <div class="container burger-menu-page">
         <button class="btn-close js-close-menu-btn" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -644,7 +642,7 @@
               <a class="burger-menu-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="burger-menu-item">
-              <a class="burger-menu-link" href="#contacts">Contacts</a>
+              <a class="burger-menu-link" href="#footer">Contacts</a>
             </li>
           </ul>
         </nav>
